@@ -3,7 +3,7 @@ About openexr
 
 Home: https://github.com/openexr/openexr
 
-Package license: Modified BSD
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
