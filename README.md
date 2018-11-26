@@ -24,7 +24,7 @@ Current build status
 
 [![Linux](https://img.shields.io/circleci/project/github/conda-forge/openexr-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/openexr-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/openexr-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/openexr-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/openexr-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/openexr-feedstock/branch/master)
 
 Current release info
 ====================

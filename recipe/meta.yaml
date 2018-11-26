@@ -19,8 +19,7 @@ source:
 
 build:
   number: 1000
-  # skip: True  # [win and vc<14]
-  skip: True  # [win]
+  skip: True  # [win and vc<14]
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=openexr
     - {{ pin_subpackage(name, max_pin="x.x") }}
