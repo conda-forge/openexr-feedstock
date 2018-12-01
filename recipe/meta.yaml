@@ -12,6 +12,8 @@ source:
   # Windows
   url: https://github.com/openexr/{{ name }}/archive/v{{ version }}.tar.gz  # [win]
   sha256: 8243b7de12b52239fe9235a6aeb4e35ead2247833e4fbc41541774b222717933  # [win]
+  patches:                                                                  # [win]
+    - 0001-Imported-libraries-visibility.patch                              # [win]
 
   # Unix
   url: https://github.com/openexr/openexr/releases/download/v{{ version }}/{{ name|lower }}-{{ version }}.tar.gz  # [not win]
@@ -19,8 +21,7 @@ source:
 
 build:
   number: 1000
-  # skip: True  # [win and vc<14]
-  skip: True  # [win]
+  skip: True  # [win and vc<14]
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=openexr
     - {{ pin_subpackage(name, max_pin="x.x") }}
