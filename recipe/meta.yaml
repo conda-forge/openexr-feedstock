@@ -1,6 +1,6 @@
 {% set name = "openexr" %}
-{% set version = "2.4.1" %}
-{% set sha256 = "3ebbe9a8e67edb4a25890b98c598e9fe23b10f96d1416d6a3ff0732e99d001c1" %}
+{% set version = "2.5.1" %}
+{% set sha256 = "11f806bf256453e39fc33bd1cf1fa576a54f144cedcdd3e6935a177e5a89d02e" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win and vc<14]
+  skip: true  # [win and vc<14]
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=openexr
     - {{ pin_subpackage(name, max_pin="x.x") }}
