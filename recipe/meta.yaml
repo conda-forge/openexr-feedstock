@@ -24,10 +24,10 @@ requirements:
     - make  # [unix]
   host:
     - zlib
-    - ilmbase
+    - ilmbase {{ version }}
   run:
     - zlib
-    - ilmbase
+    - ilmbase {{ version }}
 
 test:
   commands:
