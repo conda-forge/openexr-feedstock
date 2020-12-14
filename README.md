@@ -5,11 +5,15 @@ Home: https://github.com/openexr/openexr
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openexr-feedstock/blob/master/LICENSE.txt)
 
 Summary: OpenEXR is a high dynamic-range (HDR) image file format developed by
 Industrial Light & Magic for use in computer imaging applications.
 
+
+Development: https://github.com/openexr/openexr
+
+Documentation: http://www.openexr.com/documentation.html
 
 OpenEXR is a high dynamic-range (HDR) image file format developed by
 Industrial Light & Magic (ILM) for use in computer imaging applications. It
