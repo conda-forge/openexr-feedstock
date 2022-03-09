@@ -1,6 +1,6 @@
 {% set name = "openexr" %}
-{% set version = "2.5.5" %}
-{% set sha256 = "59e98361cb31456a9634378d0f653a2b9554b8900f233450f2396ff495ea76b3" %}
+{% set version = "3.1.4" %}
+{% set sha256 = "cb019c3c69ada47fe340f7fa6c8b863ca0515804dc60bdb25c942c1da886930b" %}
 
 package:
   name: {{ name|lower }}
@@ -23,23 +23,17 @@ requirements:
     - cmake
     - make  # [unix]
   host:
+    - imath {{ version }}
     - zlib
-    - ilmbase {{ version }}
-  run:
-    - zlib
-    - ilmbase {{ version }}
 
 test:
   commands:
     - test -e $PREFIX/include/OpenEXR/OpenEXRConfig.h  # [unix]
-    - test -e $PREFIX/include/OpenEXR/IlmBaseConfig.h  # [unix]
-    - test -e $PREFIX/lib/libHalf$SHLIB_EXT            # [unix]
-    - test -e $PREFIX/lib/libIexMath$SHLIB_EXT         # [unix]
+    - test -e $PREFIX/include/OpenEXR/IexConfig.h      # [unix]
     - test -e $PREFIX/lib/libIex$SHLIB_EXT             # [unix]
-    - test -e $PREFIX/lib/libIlmImf$SHLIB_EXT          # [unix]
-    - test -e $PREFIX/lib/libIlmImfUtil$SHLIB_EXT      # [unix]
     - test -e $PREFIX/lib/libIlmThread$SHLIB_EXT       # [unix]
     - test -e $PREFIX/lib/libImath$SHLIB_EXT           # [unix]
+    - test -e $PREFIX/lib/libOpenEXR$SHLIB_EXT         # [unix]
 
 about:
   home: https://github.com/openexr/openexr

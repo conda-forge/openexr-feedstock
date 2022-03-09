@@ -1,7 +1,9 @@
 #!/bin/bash
-cd OpenEXR
 mkdir build
 cd build
+
+export CFLAGS="$CFLAGS -D__STDC_FORMAT_MACROS"
+export CXXFLAGS="$CXXFLAGS -D__STDC_FORMAT_MACROS"
 
 cmake ${CMAKE_ARGS} -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DBUILD_SHARED_LIBS=ON \
