@@ -1,0 +1,12 @@
+diff --git a/src/test/OpenEXRCoreTest/compression.cpp b/src/test/OpenEXRCoreTest/compression.cpp
+index 1a74fb4..c3d5b18 100644
+--- a/src/test/OpenEXRCoreTest/compression.cpp
++++ b/src/test/OpenEXRCoreTest/compression.cpp
+@@ -14,6 +14,7 @@
+ #include <iomanip>
+ #include <iostream>
+ #include <vector>
++#include <algorithm>
+ 
+ #include <ImathRandom.h>
+ #include <ImfArray.h>
