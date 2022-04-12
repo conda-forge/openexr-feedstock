@@ -1,6 +1,6 @@
 {% set name = "openexr" %}
-{% set version = "3.1.4" %}
-{% set sha256 = "cb019c3c69ada47fe340f7fa6c8b863ca0515804dc60bdb25c942c1da886930b" %}
+{% set version = "3.1.5" %}
+{% set sha256 = "93925805c1fc4f8162b35f0ae109c4a75344e6decae5a240afdfce25f8a433ec" %}
 
 package:
   name: {{ name|lower }}
@@ -9,8 +9,6 @@ package:
 source:
   url: https://github.com/AcademySoftwareFoundation/openexr/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - msvc-build-fixes.patch  # [win]
 
 build:
   number: 0
