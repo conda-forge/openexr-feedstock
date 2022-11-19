@@ -8,6 +8,7 @@ cmake -G "NMake Makefiles" ^
       -DCMAKE_BUILD_TYPE=Release ^
       -DCMAKE_INSTALL_LIBDIR=lib ^
       -DOPENEXR_LIB_SUFFIX="" ^
+      -DOPENEXR_INSTALL_PKG_CONFIG=ON ^
       ..
 
 if errorlevel 1 exit 1
