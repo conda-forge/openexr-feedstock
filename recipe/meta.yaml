@@ -35,8 +35,6 @@ test:
     - test -f $PREFIX/lib/libImath$SHLIB_EXT           # [unix]
     - test -f $PREFIX/lib/libOpenEXR$SHLIB_EXT         # [unix]
     - if not exist %PREFIX%\\Library\lib\pkgconfig\OpenEXR.pc exit 1  # [win]
-    # Manually inspect pc file. remove after manual testing complete
-    - type %PREFIX%\\Library\lib\pkgconfig\OpenEXR.pc   # [win]
 
 about:
   home: https://github.com/openexr/openexr
