@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=openexr
@@ -28,12 +28,13 @@ requirements:
 
 test:
   commands:
-    - test -e $PREFIX/include/OpenEXR/OpenEXRConfig.h  # [unix]
-    - test -e $PREFIX/include/OpenEXR/IexConfig.h      # [unix]
-    - test -e $PREFIX/lib/libIex$SHLIB_EXT             # [unix]
-    - test -e $PREFIX/lib/libIlmThread$SHLIB_EXT       # [unix]
-    - test -e $PREFIX/lib/libImath$SHLIB_EXT           # [unix]
-    - test -e $PREFIX/lib/libOpenEXR$SHLIB_EXT         # [unix]
+    - test -f $PREFIX/include/OpenEXR/OpenEXRConfig.h  # [unix]
+    - test -f $PREFIX/include/OpenEXR/IexConfig.h      # [unix]
+    - test -f $PREFIX/lib/libIex$SHLIB_EXT             # [unix]
+    - test -f $PREFIX/lib/libIlmThread$SHLIB_EXT       # [unix]
+    - test -f $PREFIX/lib/libImath$SHLIB_EXT           # [unix]
+    - test -f $PREFIX/lib/libOpenEXR$SHLIB_EXT         # [unix]
+    - if not exist %PREFIX%\\Library\lib\pkgconfig\OpenEXR.pc exit 1  # [win]
 
 about:
   home: https://github.com/openexr/openexr
