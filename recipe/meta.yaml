@@ -11,8 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
-  skip: true  # [win and vc<14]
+  number: 3
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=openexr
     - {{ pin_subpackage(name, max_pin="x.x") }}
@@ -23,7 +22,7 @@ requirements:
     - cmake
     - make  # [unix]
   host:
-    - imath {{ version }}
+    - imath
     - zlib
 
 test:
