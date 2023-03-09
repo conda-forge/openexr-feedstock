@@ -23,7 +23,7 @@ requirements:
     - cmake
     - make  # [unix]
   host:
-    - imath {{ version }}
+    - imath
     - zlib
 
 test:
