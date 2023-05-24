@@ -5,7 +5,7 @@ channel_targets:
 cxx_compiler:
 - vs2019
 imath:
-- 3.1.7
+- 3.1.8
 target_platform:
 - win-64
 zlib:
