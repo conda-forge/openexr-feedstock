@@ -1,6 +1,6 @@
 {% set name = "openexr" %}
-{% set version = "3.1.11" %}
-{% set sha256 = "06b4a20d0791b5ec0f804c855d320a0615ce8445124f293616a086e093f1f1e1" %}
+{% set version = "3.2.0" %}
+{% set sha256 = "b1b200606640547fceff0d3ebe01ac05c4a7ae2a131be7e9b3e5b9f491ef35b3" %}
 
 package:
   name: {{ name|lower }}
