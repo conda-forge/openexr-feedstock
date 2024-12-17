@@ -17,7 +17,7 @@ cxx_compiler_version:
 imath:
 - 3.1.12
 libdeflate:
-- '1.22'
+- '1.23'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 openexr:

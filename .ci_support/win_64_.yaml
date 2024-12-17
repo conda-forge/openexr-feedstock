@@ -9,7 +9,7 @@ cxx_compiler:
 imath:
 - 3.1.12
 libdeflate:
-- '1.22'
+- '1.23'
 openexr:
 - '3.3'
 target_platform:
