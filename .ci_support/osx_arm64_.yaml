@@ -20,8 +20,6 @@ libdeflate:
 - '1.23'
 macos_machine:
 - arm64-apple-darwin20.0.0
-openexr:
-- '3.3'
 target_platform:
 - osx-arm64
 zlib:

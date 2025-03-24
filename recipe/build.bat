@@ -2,8 +2,9 @@ cd OpenEXR
 mkdir build
 cd build
 
-cmake -G "NMake Makefiles" ^
-	  -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
+cmake -G "Ninja" ^
+      %CMAKE_ARGS% ^
+	-DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
       -DBUILD_SHARED_LIBS=ON ^
       -DCMAKE_BUILD_TYPE=Release ^
       -DCMAKE_INSTALL_LIBDIR=lib ^
@@ -13,8 +14,5 @@ cmake -G "NMake Makefiles" ^
 
 if errorlevel 1 exit 1
 
-nmake
-if errorlevel 1 exit 1
-
-nmake install
+ninja install
 if errorlevel 1 exit 1

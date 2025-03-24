@@ -18,8 +18,6 @@ imath:
 - 3.1.12
 libdeflate:
 - '1.23'
-openexr:
-- '3.3'
 target_platform:
 - linux-aarch64
 zlib:
