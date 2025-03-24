@@ -34,9 +34,9 @@ tests:
         - OpenEXR/OpenEXRConfig.h
         - OpenEXR/IexConfig.h
       lib:
-        - libIex
-        - libIlmThread
-        - libOpenEXR
+        - Iex
+        - IlmThread
+        - OpenEXR
       files:
         - "**/lib/pkgconfig/OpenEXR.pc"
   - script:
