@@ -36,10 +36,12 @@ tests:
       lib:
         - libIex
         - libIlmThread
-        - libImath
         - libOpenEXR
       files:
         - "**/lib/pkgconfig/OpenEXR.pc"
+  - script:
+      - exrinfo --help
+      - exrmakepreview --help
 
 about:
   homepage: https://github.com/openexr/openexr
