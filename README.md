@@ -10,7 +10,6 @@ Package license: BSD-3-Clause
 Summary: OpenEXR is a high dynamic-range (HDR) image file format developed by
 Industrial Light & Magic for use in computer imaging applications.
 
-
 Development: https://github.com/openexr/openexr
 
 Documentation: http://www.openexr.com/documentation.html
@@ -21,7 +20,6 @@ supports stereoscopic and deep images. Weta Digital, Walt Disney Animation
 Studios, Sony Pictures Imageworks, Pixar Animation Studios, DreamWorks, and
 other studios, companies, and individuals have made contributions to the
 code base. The file format has seen wide adoption in a number of industries.
-
 
 Current build status
 ====================
