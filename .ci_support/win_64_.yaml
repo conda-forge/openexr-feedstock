@@ -9,7 +9,7 @@ cxx_compiler:
 imath:
 - 3.1.12
 libdeflate:
-- '1.23'
+- '1.24'
 target_platform:
 - win-64
 zlib:
