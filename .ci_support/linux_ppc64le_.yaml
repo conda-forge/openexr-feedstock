@@ -15,7 +15,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma9
 imath:
-- 3.1.12
+- 3.2.1
 libdeflate:
 - '1.24'
 target_platform:
