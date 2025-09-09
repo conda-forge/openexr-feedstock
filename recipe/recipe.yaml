@@ -1,6 +1,6 @@
 context:
   name: openexr
-  version: "3.3.5"
+  version: "3.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/AcademySoftwareFoundation/openexr/archive/v${{ version }}.tar.gz
-  sha256: cb0c88710c906c9bfc59027eb147e780d508c7be1a90b43af3ec9e3c2987b70d
+  sha256: d7b31637d7adc359f5e5a7517ba918cb5997bc1a4ae7a808ec874cdf91da93c0
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -23,6 +23,7 @@ requirements:
   host:
     - libdeflate
     - imath
+    - openjph
     - zlib
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=openexr
