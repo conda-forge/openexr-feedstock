@@ -2,6 +2,8 @@ cd OpenEXR
 mkdir build
 cd build
 
+set "CXXFLAGS=-external:I%LIBRARY_PREFIX%\include\openjph"
+
 cmake -G "Ninja" ^
       %CMAKE_ARGS% ^
 	-DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^

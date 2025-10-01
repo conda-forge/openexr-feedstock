@@ -2,8 +2,6 @@ c_stdlib:
 - sysroot
 c_stdlib_version:
 - '2.17'
-cdt_name:
-- conda
 channel_sources:
 - conda-forge
 channel_targets:
@@ -18,6 +16,8 @@ imath:
 - 3.2.1
 libdeflate:
 - '1.24'
+openjph:
+- '0.24'
 target_platform:
 - linux-64
 zlib:
