@@ -17,7 +17,7 @@ imath:
 libdeflate:
 - '1.25'
 openjph:
-- '0.25'
+- '0.26'
 target_platform:
 - linux-64
 zlib:
