@@ -11,7 +11,7 @@ imath:
 libdeflate:
 - '1.25'
 openjph:
-- '0.30'
+- '0.31'
 target_platform:
 - win-arm64
 zlib:
