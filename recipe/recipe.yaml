@@ -23,7 +23,7 @@ requirements:
   host:
     - libdeflate
     - imath
-    - openjph >=0.32
+    - openjph
     - zlib
     - zstd
   run_exports:
