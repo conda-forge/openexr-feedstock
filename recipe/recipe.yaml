@@ -11,7 +11,7 @@ source:
   sha256: 85a291b9b8563fabef1aa3f6e912d744ce1d4b9fd5a8f978eda194cd51b15ae9
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -23,7 +23,7 @@ requirements:
   host:
     - libdeflate
     - imath
-    - openjph >=0.32
+    - openjph
     - zlib
     - zstd
   run_exports:
