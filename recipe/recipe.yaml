@@ -1,6 +1,6 @@
 context:
   name: openexr
-  version: "3.5.2"
+  version: "3.5.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/AcademySoftwareFoundation/openexr/archive/v${{ version }}.tar.gz
-  sha256: 85a291b9b8563fabef1aa3f6e912d744ce1d4b9fd5a8f978eda194cd51b15ae9
+  sha256: ff1de95f4031c1c57c633e647dc97c15282d3aa3bc7fb90745f00f74de4a054f
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
