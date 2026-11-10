@@ -17,7 +17,7 @@ docker_image:
 imath:
 - 3.2.3
 libdeflate:
-- '1.25'
+- '1.26'
 openjph:
 - '0.33'
 target_platform:

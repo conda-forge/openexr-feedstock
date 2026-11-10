@@ -15,7 +15,7 @@ cxx_compiler_version:
 imath:
 - 3.2.3
 libdeflate:
-- '1.25'
+- '1.26'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 openjph:
