@@ -9,8 +9,6 @@ package:
 source:
   url: https://github.com/AcademySoftwareFoundation/openexr/archive/v${{ version }}.tar.gz
   sha256: cedafe3171176d20baea4e887ceacc74cbe3a5a06fbb30d9f0a394a4416e5f7b
-  patches:
-    - openjph-req.patch
 
 build:
   number: 0
