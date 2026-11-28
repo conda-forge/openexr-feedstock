@@ -19,4 +19,4 @@ target_platform:
 zlib:
 - '1'
 zstd:
-- '1.5'
+- '1.6'
